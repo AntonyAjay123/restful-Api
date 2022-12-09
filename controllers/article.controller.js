@@ -65,7 +65,6 @@ function putArticle(req,res){
 }
 
 function patchArticle(req,res){
-  console.log(req.params,req.body)
   Article.updateOne(
     {title:req.params.title},
     {$set:req.body},
